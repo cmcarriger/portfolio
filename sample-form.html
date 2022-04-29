@@ -38,7 +38,7 @@ form {
     font-size: 15px;
 }
 
-label, input, button {
+label, input, a.submit {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -68,11 +68,11 @@ background-color: rgba(5,32,74,.5);
 color: #fff; 
 }
 
-button {
+a.submit {
     font-family: Raleway, sans-serif;
     font-weight: bold; 
     font-size: 16px;
-    width: 100%;
+    width: 96%;
     max-width: 600px;
     margin: auto;
     padding: 2%;
@@ -80,9 +80,11 @@ button {
     color: #fff;
     background-color: #318ba2;
     border: 2px solid #318ba2;
+    text-decoration: none;
+    display: inline-block;
 }
 
-button:hover {
+a.submit:hover {
 color: #318ba2;
 background-color: #fff;
 border: 2px solid #318ba2;
@@ -102,7 +104,7 @@ cursor:pointer;
     max-width:767px; 
     width: 100%;
 }
-button, input, label {
+a.submit, input, label {
     max-width: 767px; 
 }
 }
@@ -120,7 +122,8 @@ button, input, label {
       <label>Number of attendees</label>
       <input type="number" name="attendees"/>
       <div class="submit-button">
-        <a style="text-decoration: none;" href="https://cmcarriger.github.io/portfolio/confirmation-page.html"<button class="submit">Submit&nbsp;&nbsp;<i class="fa-solid fa-circle-right"></i></button></a>
+       <a href="https://cmcarriger.github.io/portfolio/confirmation-page.html" class="submit">Submit&nbsp;&nbsp;<i class="fa-solid fa-circle-right"></i>
+        </a> 
     </div>
     </form>
   </div>
